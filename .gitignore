@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Dependencies (only if using npm)
+node_modules/
+
+# Build folders (if using React, Vite, etc.)
+dist/
+build/
