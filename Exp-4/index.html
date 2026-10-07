@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exp-4</title>
+</head>
+<body>
+    <h1>Hotel Room Booking Form</h1>
+
+<form action="#" method="post">
+<label for="name"> Full Name:</label>
+<input type="text" id="name" required>
+<br><br>
+<label for="email"> Email:</label>
+<input type="email" id="email" required>
+<br><br>
+<label for="phone"> Phone Number:</label>
+<input type="tel" id="phone">
+<br><br>
+<label for="password"> Password:</label>
+<input type="password" id="password" required>
+<br><br>
+<label for="checkin"> Check-in Date:</label>
+<input type="date" id="checkin" required>
+<br><br>
+<label for="checkout"> Check-out Date:</label>
+<input type="date" id="checkout" required>
+<br><br>
+<label for="roomtype"> Room Type:</label>
+<select id="roomtype" required>
+    <option value="">Select a room type</option>
+    <option value="single">Single Room</option>
+    <option value="double">Double Room</option>
+    <option value="deluxe">Deluxe Room</option>
+    <option value="suite">Suite</option>
+</select>
+<br><br>
+<label for="guests"> Number of Guests:</label>
+<input type="number" id="guests" min="1" max="10" value="1" required>
+<br><br>
+<label for="requests"> Special Requests:</label>
+<br>
+<textarea id="requests" rows="4" cols="50"></textarea>
+<br><br>
+<input type="submit" value="Submit Now">
+<input type="reset" value="Reset">
+
+</form>
+
+
+    </form>
+</body>
+</html>
