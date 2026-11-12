@@ -4,9 +4,27 @@
     <title>Assignment 6 - Nested and Mixed Lists</title>
 </head>
 <body>
+    <!-- Outer ordered list (1, 2) -->
     <ol>
-        <li>Unit 1</li>
-        <li>Unit 2</li>
+        <li>Unit 1
+            <!-- Unordered list inside Unit 1 -->
+            <ul>
+                <li>Introduction</li>
+                <li>HTML Basics
+                    <!-- Ordered list (a, b) inside HTML Basics -->
+                    <ol type="a">
+                        <li>Tags</li>
+                        <li>Attributes</li>
+                    </ol>
+                </li>
+            </ul>
+        </li>
+        <li>Unit 2
+            <ul>
+                <li>Tables</li>
+                <li>Forms</li>
+            </ul>
+        </li>
     </ol>
 </body>
 </html>
