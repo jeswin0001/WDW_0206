@@ -1,21 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Assignment 4 - Semantic Elements</title>
+    <title>Assignment 4 - Semantic and Non-Semantic Elements</title>
 </head>
 <body>
+    <!-- Semantic layout: tags tell the meaning of each part -->
     <header>
         <h1>College Portal</h1>
     </header>
 
     <nav>
+        <a href="#">Home</a> | <a href="#">Courses</a>
     </nav>
 
     <main>
+        <section>
+            <h2>Admission Open</h2>
+            <p>Apply before 30 June.</p>
+        </section>
+
+        <aside>
+            <p>Notice: Library closed Sunday.</p>
+        </aside>
     </main>
 
     <footer>
         <p>&copy; 2026 College</p>
     </footer>
+
+    <!--
+    Non-semantic layout (same page using div only).
+    div has no meaning, so we need id or class names to explain it.
+
+    <div id="header">
+        <h1>College Portal</h1>
+    </div>
+    <div id="nav">
+        <a href="#">Home</a> | <a href="#">Courses</a>
+    </div>
+    <div id="main">
+        <h2>Admission Open</h2>
+        <p>Apply before 30 June.</p>
+    </div>
+    <div id="notice">
+        <p>Notice: Library closed Sunday.</p>
+    </div>
+    <div id="footer">
+        <p>&copy; 2026 College</p>
+    </div>
+    -->
 </body>
 </html>
