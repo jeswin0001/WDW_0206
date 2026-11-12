@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Assignment 8 - Hyperlinks and Images</title>
+    <title>Assignment 8 - Hyperlinks and Images with Attributes</title>
 </head>
 <body>
-    <p>Links demo</p>
+    <p id="top">Links demo</p>
 
+    <!-- External link: opens in a new tab -->
     <a href="https://www.google.com" target="_blank">External link</a><br>
+
+    <!-- Internal link: jumps to the id "bottom" -->
     <a href="#bottom">Jump to bottom</a><br>
+
+    <!-- Email link -->
     <a href="mailto:student@college.edu">Email us</a><br>
+
+    <!-- Image link -->
+    <a href="https://www.google.com" target="_blank">
+        <img src="logo.png" alt="Logo" width="150" height="80">
+    </a>
+
+    <!-- Empty space to make the page long -->
+    <div style="height: 800px;"></div>
+
+    <p id="bottom">Bottom. <a href="#top">Back to top</a></p>
 </body>
 </html>
