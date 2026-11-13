@@ -4,6 +4,7 @@
     <title>Assignment 11 - Accessibility</title>
 </head>
 <body>
+    <!-- Skip link: lets keyboard users jump straight to the main content -->
     <a href="#main">Skip to main content</a>
 
     <nav>
@@ -12,7 +13,20 @@
     </nav>
 
     <main id="main">
+        <!-- Proper heading -->
         <h1>Accessible Page</h1>
+
+        <!-- Image with alt text -->
+        <img src="photo.jpg" alt="College building" width="250" height="25">
+
+        <!-- aria-label tells screen readers what the X button does -->
+        <button aria-label="Close">X</button>
+
+        <!-- Label connected to the input using for and id -->
+        <p>
+            <label for="search">Search:</label>
+            <input type="text" id="search">
+        </p>
     </main>
 </body>
 </html>
