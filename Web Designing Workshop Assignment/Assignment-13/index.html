@@ -1,21 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Assignment 13 - Timetable</title>
+    <title>Assignment 13 - Rowspan and Colspan (Timetable)</title>
+    <style>
+        /* Borders and centered text */
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 6px;
+            text-align: center;
+        }
+
+        caption {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <table>
+        <caption>Weekly Timetable</caption>
+
         <tr>
             <th>Day</th>
             <th>9-10</th>
             <th>10-11</th>
             <th>11-12</th>
         </tr>
+
         <tr>
             <td>Mon</td>
             <td>Maths</td>
             <td>HTML</td>
-            <td>Web Lab</td>
+            <!-- rowspan="2" joins this cell with the cell below it -->
+            <td rowspan="2">Web Lab</td>
+        </tr>
+
+        <tr>
+            <td>Tue</td>
+            <td>DBMS</td>
+            <td>OS</td>
+        </tr>
+
+        <tr>
+            <td>Wed</td>
+            <!-- colspan="3" joins three cells in the same row -->
+            <td colspan="3">Seminar</td>
         </tr>
     </table>
 </body>
