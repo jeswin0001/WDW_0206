@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Assignment 12 - Table</title>
+    <title>Assignment 12 - Table with Headers, Caption and Footer</title>
+    <style>
+        /* Borders for the table */
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 6px;
+        }
+    </style>
 </head>
 <body>
     <table>
+        <!-- Caption: title of the table -->
+        <caption>Student Marks</caption>
+
+        <!-- Header section -->
         <thead>
             <tr>
                 <th>Roll</th>
@@ -12,6 +24,8 @@
                 <th>Marks</th>
             </tr>
         </thead>
+
+        <!-- Body section -->
         <tbody>
             <tr>
                 <td>1</td>
@@ -24,6 +38,14 @@
                 <td>92</td>
             </tr>
         </tbody>
+
+        <!-- Footer section: colspan="2" joins two columns -->
+        <tfoot>
+            <tr>
+                <td colspan="2">Average</td>
+                <td>88.5</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
