@@ -2,38 +2,56 @@
 <html lang="en">
 <head>
     <title>Assignment 14 - Nested and Responsive Tables</title>
+    <style>
+        /* Borders and centered text for all tables */
+        table, th, td {
+            border: 1px solid gray;
+            border-collapse: collapse;
+            padding: 6px;
+            text-align: center;
+        }
+
+        /* Wide table scrolls sideways on small screens */
+        .table-box {
+            overflow-x: auto;
+        }
+    </style>
 </head>
 <body>
-    <table>
-        <tr>
-            <th>Day</th>
-            <th>Lab Batches</th>
-            <th>Faculty</th>
-            <th>Room</th>
-            <th>Time</th>
-        </tr>
-        <tr>
-            <td>Friday</td>
-            <td>
-                <table>
-                    <tr>
-                        <th>Batch</th>
-                        <th>System</th>
-                    </tr>
-                    <tr>
-                        <td>A1</td>
-                        <td>PC 1-20</td>
-                    </tr>
-                    <tr>
-                        <td>A2</td>
-                        <td>PC 21-40</td>
-                    </tr>
-                </table>
-            </td>
-            <td>Dr. Sharma</td>
-            <td>Lab 2</td>
-            <td>2-4 PM</td>
-        </tr>
-    </table>
+    <!-- This div makes the table scroll on small screens -->
+    <div class="table-box">
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Lab Batches</th>
+                <th>Faculty</th>
+                <th>Room</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>
+                    <!-- Nested table: a table inside a cell -->
+                    <table>
+                        <tr>
+                            <th>Batch</th>
+                            <th>System</th>
+                        </tr>
+                        <tr>
+                            <td>A1</td>
+                            <td>PC 1-20</td>
+                        </tr>
+                        <tr>
+                            <td>A2</td>
+                            <td>PC 21-40</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Dr. Sharma</td>
+                <td>Lab 2</td>
+                <td>2-4 PM</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
